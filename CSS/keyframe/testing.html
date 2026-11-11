@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 300px;
+        }
+        .box{
+            width: 10px;
+            background-color: blue;
+            height: 300px;
+            border: 1px solid black;
+            cursor: pointer;
+            animation: spin infinite 1s;
+        }
+        .box:hover{
+            background-color: black;
+        }
+        @keyframes spin {
+            0%{
+                background-color: blueviolet;
+            }
+            25%{
+                transform: rotate(360deg);
+                background-color: aqua;
+            }
+            50%{
+                background-color: chocolate;
+                margin-left: 1500px;
+                margin-top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

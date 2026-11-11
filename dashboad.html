@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .sidebar{
+            height: 100vh;
+            width: 300px;
+            box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            color:gray;
+            font-weight: 700;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+        .sidebar-menu{
+            display: flex;
+            flex-direction: column;
+            padding: 30px 30px;
+            gap: 15px;
+            list-style: none;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .sidebar-menu a{
+            text-decoration: none;
+            font-size: 20px;
+            color: gray;
+            font-weight: 500;
+        }
+        .sidebar-menu li{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="dashboad-container">
+        <div class="sidebar">
+            <div class="logo">Logoipim</div>
+            <div class="sidebar-menu">
+                <li><a href=""><i class="fa-solid fa-box"></i>Dashboad</a></li>
+                <li><a href=""><i class="fa-solid fa-pen-to-square"></i>Form</a></li>
+                <li><a href=""><i class="fa-solid fa-user"></i>Profile</a></li>
+                <li><a href=""><i class="fa-solid fa-square-poll-horizontal"></i>Result</a></li>
+                <li><a href=""><i class="fa-brands fa-square-font-awesome-stroke"></i>Exception</a></li>
+                <li><a href=""><i class="fa-solid fa-circle-user"></i>Account</a></li>
+            </div>
+        </div>
+        <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Top Metrics Row -->
+      <section class="metrics-grid">
+        <!-- Card 1: Total Sales -->
+        <div class="card metric-card">
+          <div class="card-header">
+            <span class="card-title">Total Sales</span>
+            <i class="fa-solid fa-circle-info info-icon"></i>
+          </div>
+          <div class="metric-value">$ 154,430</div>
+          <div class="ratios">
+            <span class="ratio up">Week ratio 13% <i class="fa-solid fa-caret-up"></i></span>
+            <span class="ratio down">Day ratio 10% <i class="fa-solid fa-caret-down"></i></span>
+          </div>
+          <div class="card-footer">
+            <span>Day Sales $15,443</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Visits -->
+        <div class="card metric-card">
+          <div class="card-header">
+            <span class="card-title">Visits</span>
+            <i class="fa-solid fa-circle-info info-icon"></i>
+          </div>
+          <div class="metric-value">6,480</div>
+          <!-- Placeholder for the Area chart -->
+          <div class="chart-placeholder area-chart">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+          </div>
+          <div class="card-footer">
+            <span>Day visits 4,280</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Payments -->
+        <div class="card metric-card">
+          <div class="card-header">
+            <span class="card-title">Payments</span>
+            <i class="fa-solid fa-circle-info info-icon"></i>
+          </div>
+          <div class="metric-value">5,320</div>
+          <!-- Placeholder for the Column mini chart -->
+          <div class="mini-bar-chart">
+            <div class="mini-bar" style="height: 40%"></div>
+            <div class="mini-bar" style="height: 80%"></div>
+            <div class="mini-bar" style="height: 60%"></div>
+            <div class="mini-bar" style="height: 30%"></div>
+            <div class="mini-bar" style="height: 70%"></div>
+          </div>
+          <div class="card-footer">
+            <span>Convertion rate 50%</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Operation Effect -->
+        
+    </div>
+ </body>
+ </html>
